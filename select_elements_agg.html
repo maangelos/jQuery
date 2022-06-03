@@ -14,10 +14,16 @@
 	<div>Div 3</div>
 
 
-	<ul>
+	<ul class="list1">
 		<li class="example1">Menu 1 - Item 1</li>
-		<li>Menu 1 - Item 2</li>
-		<li>Menu 1 - Item 3</li>
+		<li class="example">Menu 1 - Item 2</li>
+		<li class="example">Menu 1 - Item 3</li>
+	</ul><br><br>
+
+	<ul class="list2">
+		<li class="example1">Menu 2 - Item 1</li>
+		<li class="example">Menu 2 - Item 2</li>
+		<li>Menu 2 - Item 3</li>
 	</ul><br><br>
 
 	<input class="example1" type="text" placeholder="field 1"/>
@@ -26,13 +32,13 @@
 
 </body>
 <script>
-	//Aggregation selector
-
+	//Aggregation selector.
 		//Select elements of a class by type of element
 		$('div.example1');
-
-
+		//Select elements by class of a especif class
+		console.log($('.list1 .example'))
 	//Array manipulation 
+		console.log($('.list1 .example:first'))
 	
 
 
