@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+	<script src="exercicio_05.js"></script>
+</head>
+<body>
+	<form id="myForm">
+		Nome: <br>
+		<input type="text" name="nome"><br>
+		Sobrenome: <br>
+		<input type="text" name="sobrenome"><br><br>
+        Email: <br>
+		<input type="text" name="email"><br><br>
+        Endereço: <br>
+		<input type="text" name="endereco"><br><br>
+        Número: <br>
+		<input type="number" name="numero"><br><br>
+        Estado:<br>
+		<select name="estado">
+			<option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+		</select><br><br>
+        Cidade:<br>
+        <input type="text" name="cidade"><br><br>
+		CEP: <br>
+		<input type="text" name="cep" minlength="8" maxlength="8"><br><br>
+		CPF: <br>
+		<input type="text" name="cpf" minlength="11" maxlength="11"><br><br>
+		Sexo:<br>
+		<input type="radio" name="sexo" value="M"> Masculino<br>
+		<input type="radio" name="sexo" value="F"> Feminino<br><br>
+		Infos:<br>
+		<input type="checkbox" name="infos" value="revista"> Revista<br>
+		<input type="checkbox" name="infos" value="redes sociais"> Redes Sociais<br><br>
+		Mensagem:<br>
+		<textarea name="mensagem"></textarea><br><br>
+
+		<!-- enviará todos os dados acima -->
+
+		<input type="submit" value="Enviar" onclick="Enviar();"><br><br>
+	</form>
+	
+</body>
+</html>
