@@ -1,3 +1,0 @@
-// 4. Tendo o objeto A e B:
-let ObjA = '[{"item":"fruta","nome":"maçã","qtd":1},{"item":"fruta","nome":"banana","qtd":7},{"item":"legumes","nome":"cenouras","qtd":3},{"item":"bebidas","nome":"cervejas","qtd":4}]';
-let Objb = '[{"item":"fruta","nome":"maçã","precoUnidade":0.25},{"item":"fruta","nome":"banana","precoUnidade":3},{"item":"legumes","nome":"cenouras","precoUnidade":2},{"item":"bebidas","nome":"cervejas","precoUnidade":2.5}]';
