@@ -4,22 +4,43 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Formulário</title>
-	<script src="exercicio_05.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		$('#myForm').on('click', function(e){
+			e.preventDefault();
+			var dados = {
+				//aqui viria o valida($('.nome').value())
+				nome: $('.nome').val(),
+				sobrenome: $('.sobrenome').val(),
+				email: $('.email').val(),
+				endereco: $('.endereco').val(),
+				numero: $('.numero').val(),
+				estado: $('.estado').val(),
+				cidade: $('.cidade').val(),
+				cep: $('.cep').val(),
+				cpf: $('.cpf').val(),
+				sexo: $('.sexo').val(),
+				infos: $('.infos').val(),
+				mensagem: $('.mensagem').val(),
+			}
+			console.log(dados)
+		});
+	</script>
 </head>
 <body>
-	<form id="myForm">
+	<form>
 		Nome: <br>
-		<input type="text" name="nome"><br>
+		<input type="text" name="nome" class="nome" ><br><br>
 		Sobrenome: <br>
-		<input type="text" name="sobrenome"><br><br>
+		<input type="text" name="sobrenome" class="sobrenome"><br><br>
         Email: <br>
-		<input type="text" name="email"><br><br>
+		<input type="text" name="email" class="email"><br><br>
         Endereço: <br>
-		<input type="text" name="endereco"><br><br>
+		<input type="text" name="endereco" class="endereco"><br><br>
         Número: <br>
-		<input type="number" name="numero"><br><br>
+		<input type="number" name="numero" class="numero"><br><br>
         Estado:<br>
-		<select name="estado">
+		<select name="estado" class="estado">
 			<option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -29,24 +50,21 @@
             <option value="DF">Distrito Federal</option>
 		</select><br><br>
         Cidade:<br>
-        <input type="text" name="cidade"><br><br>
+        <input type="text" name="cidade", class="cidade"><br><br>
 		CEP: <br>
-		<input type="text" name="cep" minlength="8" maxlength="8"><br><br>
+		<input type="text" class="cep" name="cep" minlength="8" maxlength="8"><br><br>
 		CPF: <br>
-		<input type="text" name="cpf" minlength="11" maxlength="11"><br><br>
+		<input type="text" class="cpf" name="cpf" minlength="11" maxlength="11"><br><br>
 		Sexo:<br>
-		<input type="radio" name="sexo" value="M"> Masculino<br>
-		<input type="radio" name="sexo" value="F"> Feminino<br><br>
+		<input type="radio" classe= "sexo" name="sexo" value="M"> Masculino<br>
+		<input type="radio" class="sexo" name="sexo" value="F"> Feminino<br><br>
 		Infos:<br>
-		<input type="checkbox" name="infos" value="revista"> Revista<br>
-		<input type="checkbox" name="infos" value="redes sociais"> Redes Sociais<br><br>
+		<input type="checkbox" class="infos" name="infos" value="revista"> Revista<br>
+		<input type="checkbox" class="infos" name="infos" value="redes sociais"> Redes Sociais<br><br>
 		Mensagem:<br>
-		<textarea name="mensagem"></textarea><br><br>
+		<textarea class= "mensagem" name="mensagem"></textarea><br><br>
 
-		<!-- enviará todos os dados acima -->
-
-		<input type="submit" value="Enviar" onclick="Enviar();"><br><br>
-	</form>
-	
+		<input type="submit" id="myForm" value="Enviar"><br><br>
+	</form>	
 </body>
 </html>
